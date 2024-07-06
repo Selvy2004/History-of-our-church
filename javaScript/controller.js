@@ -5,9 +5,9 @@ import { data } from "./data.js";
 
 const loadMainResult = function () {
 
-  mainResultView.randerSpinner(); // THIS STEP !!!!!!!
   const id = window.location.hash.slice(1);
   console.log(id);
+  mainResultView.randerSpinner(); // THIS STEP !!!!!!!
   if (!id) return;
   console.log(id);
 

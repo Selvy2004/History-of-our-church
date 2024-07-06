@@ -103,7 +103,9 @@ export const data = [
     ],
     resourses: ['https://st-takla.org/Pope-1_.html'],
     centry: [20, 21],
-    category: ['pope']
+    category: ['pope'],
+    reco: true,
+    bookmarked: false,
   }, // ITEM:
   {
     name: 'البابا إنيانوس الإسكافي',
@@ -112,7 +114,9 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [1],
-    category: ['pope']
+    category: ['pope'],
+    reco: true,
+    bookmarked: false,
   }, // ITEM:
   {
     name: 'القديس مارمرقس الرسول',
@@ -121,7 +125,9 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [1],
-    category: ['pope', 'martyr', 'messenger']
+    category: ['pope', 'martyr', 'messenger'],
+    reco: true,
+    bookmarked: false,
   }, // ITEM:
   {
     name: 'البابا أثناسيوس الرسولي',
@@ -130,7 +136,9 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [4],
-    category: ['pope']
+    category: ['pope'],
+    reco: true,
+    bookmarked: false,
   }, // ITEM:
   {
     name: 'البابا ديمتريوس الكرام',
@@ -139,7 +147,9 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [],
-    category: ['pope']
+    category: ['pope'],
+    reco: false,
+    bookmarked: false,
   }, // ITEM:
 ];
 
@@ -160,5 +170,7 @@ export const data = [
 //     theEnd:[[]],
 //     resourses: [''],
 //     centry: [],
-//     category: ['']
+//     category: [''],
+//     reco: true,
+//     bookmarked: false,
 // }

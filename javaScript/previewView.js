@@ -28,14 +28,14 @@ class PreviewView {
     const searchField = document.querySelector('.search-field');
     const searchBtn = document.querySelector('.search-btn');
 
-    searchBtn.addEventListener('click', function () {
+    searchBtn.addEventListener('click', function (e) {
+      e.preventDefault();
       if (!searchField.value) return;
-      const mainData = allData.filter(obj => obj.subtopic?.name.includes(searchField.value) || obj.name.includes(searchField.value));
+      const mainData = allData.filter(obj => obj.name.includes(searchField.value));
       searchField.value = '';
       console.log(mainData);
       this.render(mainData);
     }.bind(this));
   }
-
 }
 export default new PreviewView();

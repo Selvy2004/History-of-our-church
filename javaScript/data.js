@@ -105,15 +105,15 @@ export const data = [
     centry: [20, 21],
     category: ['pope']
   }, // ITEM:
-  // {
-  //   name: 'البابا إنيانوس الإسكافي',
-  //   id: 'anianus',
-  //   imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VPxUnh5fbFgKCPjY5bxQft4t3OI8v0f3yQ&s',
-  //   topics: ['Coming Soon'],
-  //   resourses: [''],
-  //   centry: [1],
-  //   category: ['pope']
-  // }, // ITEM:
+  {
+    name: 'البابا إنيانوس الإسكافي',
+    id: 'anianus',
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_VPxUnh5fbFgKCPjY5bxQft4t3OI8v0f3yQ&s',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [1],
+    category: ['pope']
+  }, // ITEM:
   {
     name: 'القديس مارمرقس الرسول',
     id: 'markos1',

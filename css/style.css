@@ -118,6 +118,9 @@ body{
 /* NAVIGATION */
 .navigation{
   /* background-color:#f2e7c3; */
+  position: relative;
+
+  height: 10rem;
   background-color:#dccbe6;
   border-radius: 1.2rem 1.2rem 0 0;
   margin-top: 4rem;
@@ -125,6 +128,7 @@ body{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5.6rem;
+  font-size: 2.4rem;
 }
 
 .logo{
@@ -138,21 +142,56 @@ body{
   align-items: center;
   list-style: none;
   gap: 4rem;
+  height: 100%;
+
+}
+
+.nav-btn-container{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .nav-btn{
   /* background-color: #f2e7c3; */
-  
+  display: block;
   background-color: #dccbe6;
   display: flex;
   align-items: center;
   border: none;
   outline: none;
   cursor: pointer;
+  box-sizing: inherit;
 }
 
+
 .bookmark-word{
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bookmarks {
+  box-sizing: inherit;
+  padding: 1rem 0;
+  position: absolute;
+  left: 0rem;
+  bottom: -180%; 
+  z-index: 10;
+  width: 40rem;
+  border-radius: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 .8rem 5rem 2rem rgba(97, 85, 81, .1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+}
+
+.bookmark-btn-container:hover .bookmarks,
+.bookmark-btn-container:hover ~ .bookmarks {
+  visibility: visible;
+  opacity: 1;
 }
 
 .icon{
@@ -167,7 +206,10 @@ body{
   fill:var(--marker-color--);
   height: 3.2rem;
 }
-
+.icon-smile{
+  fill: var(--marker-color--);
+  width: 2.8rem;
+}
 
 /* SEARCH */
 .search-container{
@@ -232,10 +274,11 @@ body{
   font-weight: 600;
 }
 
-/* spinner */
 
+/* spinner */
 .spinner {
   margin: 5rem auto;
+
   text-align: center;
 
 }
@@ -257,7 +300,6 @@ body{
 
 
 /* Main Result */
-
 .main-result-parent{
   display: flex;
   align-items: center;
@@ -282,9 +324,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-.image-subtopic{
-  width: 20%;
-}
+
 
 .coming-soon{
   font-size: 6rem;
@@ -293,7 +333,6 @@ body{
 }
 
 .image {
-  width: 20%;
   height: 32rem;
   width: 22rem;
   border-radius: 1.2rem;
@@ -302,6 +341,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.image-subtopic{
+  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  width: 30%;
+  border-radius: 1.2rem;
+  margin-top: 2rem;
 }
 
 .result-title{
@@ -356,8 +402,6 @@ body{
 }
 
 
-
-
 /* preview */
 .previews-container{
   display: flex;
@@ -395,25 +439,19 @@ body{
   transition: all 0.3s;
 }
 
+.preview-link-active,
 .preview-link:hover{
   transform: scale(1.1);
 }
-
-/* .preview-link-active{
-  background-color: #fbd9d7;
-} */
 
 .preview-link-active::after {
   content: '';
   display: block;
   width: 100%;
-  height: 2px; 
-  /* background-color: #333;  */
+  height: 2.5px; 
   background-image: linear-gradient(to left, #c5817c,var(--marker-color--), #9a8ea1, #7b7281);
-  /* box-shadow: ; */
   margin-top: 4px; 
 }
-
 
 .preview-img{
   background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
@@ -433,18 +471,13 @@ body{
   font-size: 2rem;
 }
 
-.icon-smile{
-  fill: var(--marker-color--);
-  width: 2.8rem;
-}
+
 
 
 .recommendation-title{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: var(--marker-color--); */
-
   color: transparent; /* Make text color transparent */
   background-image: linear-gradient(to left, #c5817c,var(--marker-color--), #9a8ea1, #7b7281); /* Define your gradient */
   -webkit-background-clip: text; /* Clip background to text (for webkit browsers) */

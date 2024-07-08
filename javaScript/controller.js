@@ -6,25 +6,22 @@ import { data } from "./data.js";
 const loadMainResult = function () {
   const id = window.location.hash.slice(1);
   if (!id) return;
+  mainResultView.renderSpinner();
 
-  previewView.updateActiveLink();
-  mainResultView.randerSpinner();
-  // Page Load
-  mainResultView.render(model.mainResultData(id));
+  setTimeout(() => {
+    previewView.updateActiveLink();
+    // Page Load
+    mainResultView.render(model.mainResultData(id));
+  }, 400);
 };
 
 const loadResults = function () {
-  // mainResultView.randerSpinner();
-  previewView.recommendationPreview(data.filter(obj => obj.reco === true));
-  previewView.searchBtn(data);
+  previewView.renderSpinner();
 
-}
-
-const controlRecommendation = function () {
-  window.addEventListener('load', function (e) {
-    e.preventDefault();
-
-  });
+  setTimeout(() => {
+    previewView.recommendationPreview(data.filter(obj => obj.reco === true));
+    previewView.searchBtn(data);
+  }, 400);
 }
 
 const init = function () {

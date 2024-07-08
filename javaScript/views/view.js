@@ -7,7 +7,7 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  randerSpinner() {
+  renderSpinner() {
     const markup = `
         <div class="spinner">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="svg">
@@ -22,5 +22,4 @@ export default class View {
   _clear() {
     this._parentElement.innerHTML = '';
   }
-
 }

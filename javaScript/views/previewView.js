@@ -28,7 +28,7 @@ class PreviewView extends View {
       searchField.setAttribute('placeholder', 'بحث ...');
       resultsWord.textContent = 'Recommendation';
 
-      if (!searchField.value) return;
+      if (!searchField.value || searchField.value === ' ') return;
       const mainData = allData.filter(obj => obj.name.includes(searchField.value) || obj.subtopic?.name.includes(searchField.value));
 
       searchField.value = '';
@@ -36,12 +36,16 @@ class PreviewView extends View {
       if (mainData.length === 0) {
         searchField.setAttribute('placeholder', 'لا توجد نتائج...');
         this.recommendationPreview(this._data.filter(obj => obj.reco === true));
-
         return;
       };
 
       resultsWord.textContent = 'Results';
-      this.render(mainData);
+
+      this.renderSpinner();
+      setTimeout(() => {
+        this.render(mainData);
+      }, 400);
+
     }.bind(this));
   }
 

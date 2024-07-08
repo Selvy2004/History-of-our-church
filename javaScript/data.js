@@ -103,7 +103,7 @@ export const data = [
     ],
     resourses: ['https://st-takla.org/Pope-1_.html'],
     centry: [20, 21],
-    category: ['pope'],
+    category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
   }, // ITEM:
@@ -114,8 +114,8 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [1],
-    category: ['pope'],
-    reco: true,
+    category: ['pope', 'character'],
+    reco: false,
     bookmarked: false,
   }, // ITEM:
   {
@@ -125,7 +125,7 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [1],
-    category: ['pope', 'martyr', 'messenger'],
+    category: ['pope', 'martyr', 'messenger', 'character'],
     reco: true,
     bookmarked: false,
   }, // ITEM:
@@ -135,8 +135,8 @@ export const data = [
     imageURL: 'https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/441082490_837740158387604_5161591917019815949_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=G7Y0-hSaudMQ7kNvgGnKvQj&_nc_ht=scontent.fcai20-1.fna&oh=00_AYBi0CzZP9LHhHAi8YWgqspc6ck3sxmvo3q9_x-ujX-XFQ&oe=668D4A18',
     topics: ['Coming Soon'],
     resourses: [''],
-    centry: [4],
-    category: ['pope'],
+    centry: [],
+    category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
   }, // ITEM:
@@ -147,8 +147,41 @@ export const data = [
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [],
-    category: ['pope'],
+    category: ['pope', 'character'],
     reco: false,
+    bookmarked: false,
+  }, // ITEM:
+  {
+    name: ' القديس اكليمندس السكندرى ',
+    id: 'Clement-of-Alexandria',
+    imageURL: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Clement_of_Ohrid%2C_an_icon_from_the_second_half_of_the_14th_century_%282%29.jpg',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['character'],
+    reco: false,
+    bookmarked: false,
+  },
+  {
+    name: 'العلامة اوريجانوس',
+    id: 'origanos',
+    imageURL: 'https://scontent.fcai20-5.fna.fbcdn.net/v/t1.18169-9/29512922_1646563292100759_7003308638491565145_n.jpg?stp=dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=D7r0KERbSUsQ7kNvgE5ddBM&_nc_ht=scontent.fcai20-5.fna&oh=00_AYA-LEwF0D_JZL6qDAWP7GeoCAVHgDJaFnBkvk9uzrmkhQ&oe=66B30DD1',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['character'],
+    reco: false,
+    bookmarked: false,
+  },
+  {
+    name: 'دير المُحرق',
+    id: 'AlMuharraq',
+    imageURL: 'https://media.gemini.media/img/original/2021/4/30/2021_4_30_23_30_40_941.jpg',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['place'],
+    reco: true,
     bookmarked: false,
   }, // ITEM:
 ];
@@ -158,7 +191,8 @@ export const data = [
 
 
 
-// { name: '', // ITEM:
+// {
+//     name: '', // ITEM:
 //     id: "",
 //     imageURL: '',
 //     topics: [[],[]],

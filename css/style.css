@@ -26,7 +26,6 @@
 --- 02 Colors:
 ### Primary
 
-- Pink: hsl(322, 100%, 66%)
 
 ### Neutral
 
@@ -248,12 +247,16 @@ body{
 .search-btn{
   padding: 1.7rem 4rem;
   background-color: var(--secondary-color--);
-  /* background-image: linear-gradient(to right, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--)); */
   border: none;
+  outline: none;
   border-radius: 10rem;
   font-size: 1.8rem;
   transform: translateX(8rem);
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
 }
 
 .search-btn:hover{
@@ -261,17 +264,16 @@ body{
 }
 
 .search-icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  fill: #f5eff8;
-  margin-right: 0.5rem;
-  font-size: 1.8rem;
+  width: 2rem;
+  height: 2rem;
+  fill: var(--beige-color);
 }
 
 .search-btn span {
   vertical-align: middle;
-  color: #f5eff8;
+  color: var(--beige-color);
   font-weight: 600;
+  font-size: 2rem;
 }
 
 
@@ -388,6 +390,7 @@ body{
 .arrow-icon{
   width: 3.2rem;
   stroke: var(--marker-color--);
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -421,7 +424,7 @@ body{
   align-items: center;
   justify-content: center;
   list-style: none;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.2rem;
   gap: 5.6rem; 
   border: 2px solid var(--marker-color--);
   border-radius: 1.2rem;
@@ -476,9 +479,6 @@ body{
   font-size: 2rem;
 }
 
-
-
-
 .recommendation-title{
   display: flex;
   align-items: center;
@@ -496,4 +496,35 @@ body{
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+}
+
+/* Pagination */
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2.4rem;
+}
+.btn-inline{
+  width: 12rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: var(--secondary-color--);
+  border: none;
+  outline: none;
+  margin-bottom: 3.2rem;
+  transition: all 0.3s;
+}
+.btn-inline:hover{
+  background-color: var(--marker-color--);
+}
+.page-pagination{
+  color: var(--beige-color);
+  font-size: 1.6rem;
+  font-weight: 600;
 }

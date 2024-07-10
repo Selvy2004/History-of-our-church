@@ -132,7 +132,7 @@ export const data = [
   {
     name: 'البابا أثناسيوس الرسولي',
     id: 'athanasius',
-    imageURL: 'https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/441082490_837740158387604_5161591917019815949_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=G7Y0-hSaudMQ7kNvgGnKvQj&_nc_ht=scontent.fcai20-1.fna&oh=00_AYBi0CzZP9LHhHAi8YWgqspc6ck3sxmvo3q9_x-ujX-XFQ&oe=668D4A18',
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-2UppQMWMpF4UkepcUGi07PgKA668prN0g&s',
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [],
@@ -184,8 +184,29 @@ export const data = [
     reco: true,
     bookmarked: false,
   }, // ITEM:
+  {
+    name: ' البابا كيرلس عمود الدين',
+    id: 'kerelos1',
+    imageURL: 'https://i.pinimg.com/736x/9c/3f/ed/9c3fed7b3cbd15b5dc49d2c0b1e8111a.jpg',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['character'],
+    reco: true,
+    bookmarked: false,
+  },
+  {
+    name: 'البابا ديسقورس',
+    id: 'descoros1',
+    imageURL: 'https://www.difa3iat.com/wp-content/uploads/2023/03/difa3iat.com-2023-03-11_14-45-37_417265-jpg.webp',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['character'],
+    reco: true,
+    bookmarked: false,
+  },
 ];
-
 
 
 

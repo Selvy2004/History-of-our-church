@@ -1,6 +1,7 @@
 export default class View {
 
-  render(data) {
+  render(data, page = 1) {
+    this.page = page;
     this._data = data;
     const markup = this._generateMarkup();
     this._clear();

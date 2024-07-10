@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png"> -->
 
   <!-- Apple Touch Icon -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
   <link rel="stylesheet" href="css/style.css" />
   <script defer type="module"  src="javaScript/controller.js"></script>
   
@@ -66,11 +66,7 @@
       
       <div class="search-container">
         <form class="search-form">
-          <input
-          type="text"
-          class="search-field"
-          placeholder="بحث ..."
-          />
+          <input type="text" class="search-field" placeholder="بحث ..." />
           <button class="btn search-btn">
             <svg class="search-icon">
               <use href="img/icons.svg#icon-search"></use>
@@ -88,6 +84,23 @@
 
       <div class="previews-container">
         <ul class="preview-list"></ul>
+      </div>
+
+      <div class="pagination">
+        <!--
+        <button data-goto="${curPage + 1}" class="btn-inline pagination-btn-next">
+          <svg class="search-icon">
+            <use href="img/icons.svg#icon-arrow-right"></use>
+          </svg>
+          <span class="page-pagination">3 Page</span>
+        </button>
+        <button data-goto="${curPage - 1}" class="btn-inline pagination-btn-prev">
+          <span class="page-pagination">Page 1</span>
+          <svg class="search-icon">
+            <use href="img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+         -->
       </div>
 
       <div class="main-result-parent">

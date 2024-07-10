@@ -1,7 +1,9 @@
 import View from "./view.js";
+import paginationView from "./paginationView.js";
 
 class PreviewView extends View {
   _parentElement = document.querySelector('.preview-list');
+  _mainData;
 
   _generateMarkup() {
     return this._data.map(previewData => `
@@ -15,13 +17,16 @@ class PreviewView extends View {
   }
 
   recommendationPreview(data) {
-    this.render(data);
+    this._mainData = data;
+    this.render(paginationView.getSearchResultsPage(data));
+    paginationView.render(data);
   }
 
   searchBtn(allData) {
     const searchField = document.querySelector('.search-field');
     const searchBtn = document.querySelector('.search-btn');
     const resultsWord = document.querySelector('.reco-result');
+    let mainData;
 
     searchBtn.addEventListener('click', function (e) {
       e.preventDefault();
@@ -29,7 +34,7 @@ class PreviewView extends View {
       resultsWord.textContent = 'Recommendation';
 
       if (!searchField.value || searchField.value === ' ') return;
-      const mainData = allData.filter(obj => obj.name.includes(searchField.value) || obj.subtopic?.name.includes(searchField.value));
+      mainData = allData.filter(obj => obj.name.includes(searchField.value) || obj.subtopic?.name.includes(searchField.value));
 
       searchField.value = '';
 
@@ -38,15 +43,22 @@ class PreviewView extends View {
         this.recommendationPreview(this._data.filter(obj => obj.reco === true));
         return;
       };
-
       resultsWord.textContent = 'Results';
+      this._mainData = mainData;
 
       this.renderSpinner();
       setTimeout(() => {
-        this.render(mainData);
+        this.render(paginationView.getSearchResultsPage(mainData));
+        paginationView.render(mainData);
       }, 400);
-
     }.bind(this));
+  }
+
+  controlPagination(goToPage) {
+    if (!this._mainData) return;
+    console.log(this._mainData);
+    this.render(paginationView.getSearchResultsPage(this._mainData, goToPage));
+    paginationView.render(this._mainData, goToPage);
   }
 
   updateActiveLink() {

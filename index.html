@@ -12,8 +12,10 @@
 
   <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/allstyle.css" />
+  <link rel="stylesheet" href="css/query.css" />
   <script defer type="module"  src="javaScript/controller.js"></script>
+  <script   src="javaScript/jsquery.js"></script>
   
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,19 +30,25 @@
     <header>    
       <nav class="navigation" >
         <div class="logo">LOGO</div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden open-menu">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg> -->
+        
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden close-menu">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg> -->
+        
         <ul class="nav-list">
           <li class="nav-item"><a>المجامع المسكونية</a></li>
           <li class="nav-item"><a>أقوال أباء</a></li>
 
           <li  class="nav-btn-container">
-
             <button class="nav-item nav-btn">
               <svg  xmlns="http://www.w3.org/2000/svg" class="icon moon-icon"  viewBox="0 0 24 24" stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /><path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" /><path d="M19 11h2m-1 -1v2" /></svg>
             </button>
           </li>
 
           <li class="bookmark-btn-container">
-
             <button class="nav-item nav-btn bookmark-btn">
               <span class="bookmark-word">Bookmarks</span>
               <svg class="bookmark-icon icon">
@@ -48,22 +56,28 @@
               </svg>
             </button>
           </li>
-            <div class="bookmarks">
-              <ul class="bookmarks-list">
-                <div class="message">
-                  <div>
-                    <svg class="icon-smile">
-                      <use href="img/icons.svg#icon-smile" ></use>
-                    </svg>
-                  </div>
-                  <p>.No bookmarks yet</p>
-                </div>
+        </nav>
+        
+        <!-- <div class="bookmarks"></div>  -->
+              <!-- <ul class="bookmarks-list"> -->
+                <!-- <div class="message"><div> -->
+                <!-- 
+                  <li class="bookmark-item" href="#popeshenoda3">
+                      <img src="https://stshenoudamonastery.org.au/wp-content/uploads/2016/02/pope-shenouda-i18.jpeg" class="bookmark-image" alt=""/>
+                      <p>البابا شنودة الثالث</p>
+                    </li> 
+                -->
 
-        </ul>
-      </nav>
+               <!-- <svg class="icon-smile">
+                      <use href="img/icons.svg#icon-smile" ></use>
+                    </svg> -->
+                  <!-- </div>
+                  <p>.No bookmarks yet</p>
+                -->
+
+              <!-- </ul> -->
 
       <!-- SEARCH -->
-      
       <div class="search-container">
         <form class="search-form">
           <input type="text" class="search-field" placeholder="بحث ..." />
@@ -86,22 +100,7 @@
         <ul class="preview-list"></ul>
       </div>
 
-      <div class="pagination">
-        <!--
-        <button data-goto="${curPage + 1}" class="btn-inline pagination-btn-next">
-          <svg class="search-icon">
-            <use href="img/icons.svg#icon-arrow-right"></use>
-          </svg>
-          <span class="page-pagination">3 Page</span>
-        </button>
-        <button data-goto="${curPage - 1}" class="btn-inline pagination-btn-prev">
-          <span class="page-pagination">Page 1</span>
-          <svg class="search-icon">
-            <use href="img/icons.svg#icon-arrow-left"></use>
-          </svg>
-        </button>
-         -->
-      </div>
+      <div class="pagination"></div>
 
       <div class="main-result-parent">
             <div class="message">

@@ -1,0 +1,222 @@
+/*
+--- 01 Typography System
+
+  ## FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 
+    20 / 24 / 30 / 36 / 44 / 52 / 62 /
+     74 / 86 / 98 
+    
+  ## Font Weight
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+  
+  ## Letter Spacing
+  0.75px , -0.5px
+
+  ## Line-Height
+    Defalt: 1
+    Large-Text: 1.05
+    medium: 1.2
+    Large: 1.8
+    Small-text / Medium-text: 1.6
+
+
+--- 02 Colors:
+### Primary
+
+
+### Neutral
+
+--- 05 Shadows
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+   
+--- 06 border-radius
+    Default: 0.9rem
+    medium: 1.1rem
+
+    
+--- 07 White-space
+     SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 
+    48 / 64 / 80 / 96 / 128
+
+
+
+    font family -body:   font-family: "Young Serif", serif;
+             -heading:  font-family: "Poppins", sans-serif;
+             */
+             
+             /* transform: translate(-50%, 20%) skewY(-6deg) */
+             
+/*
+--secondary-color: #D4AF37;
+--primary-color:#FFD700; 
+
+*/
+
+/* GENERAL */
+:root {
+  /* --primary-color--: #FFEF99; */
+  /* --very-light-gold--: #fffbe6;  */
+  /* fcdcda */
+  /* --marker-color--: #9a8ea1; */
+  --primary-color--: #dccbe6;
+  --very-light-purple--: #f8f0f9; 
+  --secondary-color--: #f6a19b;
+  --light-purple--: #e0d0e9;
+  --marker-color--: #dc7b75;
+
+  --dark-gray--: #222;
+  --beige-color: #F5F5DC; /* Beige */
+  --white-color: #FFFFFF; 
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+*:focus{
+  outline: 2px solid var(--marker-color--);
+}
+
+::selection{
+  color: #fff;
+  background-color:var(--marker-color--);
+}
+
+body{
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 1.8rem;
+  color: var(--dark-gray--);
+  font-weight: 500;
+  line-height: 1.6;
+  background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 120rem;
+  background-color: var(--very-light-purple--);
+  border-radius: 1.2rem;
+  box-shadow: 5rem 2rem 6rem .5rem rgba(97, 85, 81, .2);
+}
+
+
+/* 
+.bookmarks {
+  box-sizing: inherit;
+  padding: 1rem 0;
+  position: absolute;
+  left: 0rem;
+  bottom: -180%; 
+  z-index: 10;
+  width: 40rem;
+  border-radius: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 .8rem 5rem 2rem rgba(97, 85, 81, .1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.2s;
+} */
+
+/* .bookmark-btn-container:hover .bookmarks,
+.bookmark-btn-container:hover ~ .bookmarks {
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+.icon{
+  width: 4.8rem;
+}
+.moon-icon{
+  stroke-width: 1.5px;
+  fill:none;
+  stroke: var(--marker-color--);
+}
+.bookmark-icon{
+  fill:var(--marker-color--);
+  height: 3.2rem;
+}
+.icon-smile{
+  fill: var(--marker-color--);
+  width: 2.8rem;
+}
+
+
+/* spinner */
+.spinner {
+  margin: 5rem auto;
+
+  text-align: center;
+
+}
+.spinner svg {
+  height: 6rem;
+  width: 6rem;
+  fill: var(--marker-color--);
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.bookmark-item-btn{
+  /* width:auto;   */
+  /* height: auto;   */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  /* background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--)); */
+  /* background-color: var(--secondary-color--); */
+  background-color: var(--very-light-purple--);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: -3%;
+  right: 10%;
+  
+}
+
+.icon-bookmark-item{
+  fill: var(--marker-color--);
+  width: 8rem;
+  height: 8rem;
+}
+/* ///////////////////////////////////// */
+
+.bookmark-image{
+  width: 10rem;
+  height: 10rem;
+  background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  border-radius: 1.2rem;
+  border-radius: 50%;
+  
+}
+
+.bookmark-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  /* border-bottom: 1px solid var(--marker-color--); */
+  padding:0.6rem;
+}

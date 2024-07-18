@@ -1,4 +1,6 @@
 import View from "./view.js";
+import { bookmarksArr } from "./bookMarkView.js";
+
 
 class MainResultView extends View {
   _parentElement = document.querySelector('.main-result-parent');
@@ -9,6 +11,13 @@ class MainResultView extends View {
       <div class="img-and-title">
         <img class="image ${this._data.category.includes('place') ? 'image-place' : ''}" src="${this._data.imageURL}" alt="${this._data.name}"/>
         <h2 class="result-title">${this._data.name}</h2>
+      </div>
+      <div>
+        <button class="bookmark-item-btn">
+          <svg class="icon icon-bookmark-item">
+              <use class="bookmark-svg" href="img/icons.svg#icon-bookmark${this.checkIfBookmarked() ? '-fill' : ''}"></use>
+          </svg>
+        </button>
       </div>
       <div class="result-topics">
         <ul class="results-ul">${this._data.topics[0] !== 'Coming Soon' ? this._data.topics.map(topic => this._generateTopicks(topic)).join('') : this._comingSoon()}</ul>
@@ -65,6 +74,12 @@ class MainResultView extends View {
   }
 
 
+  checkIfBookmarked() {
+    const isBookmarked = bookmarksArr.some(bookmark => bookmark.id === this._data.id);
+    this._data.bookmarked = isBookmarked;
+
+    return this._data.bookmarked
+  }
 
   eventsHandler(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
@@ -81,5 +96,7 @@ class MainResultView extends View {
       content.classList.toggle('hidden');
     });
   }
+
+
 };
 export default new MainResultView();

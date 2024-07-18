@@ -80,7 +80,7 @@ export const data = [
     `],
     ],
     subtopic: {
-      imageURL: 'https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/299532074_433876515428556_8348709720446870195_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=aZpp6lo-i9kQ7kNvgEWpElZ&_nc_ht=scontent.fcai20-1.fna&oh=00_AYCUmBNRqkI1k_cVTIbvMJi0dRDjZ-H3SPVe8FOCQSoTXQ&oe=668AA0B8',
+      imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnV5i319KcPtixZpma_mx4yV2X9ZpaPopJg&s',
       name: 'الأنبا بنيامين مطران المنوفية',
       topics: [['السادات و الأنبا بنيامين', `
           سنة 1976، كان السادات فاز بالانتخابات الرئاسية للمرة الثانية.. فالطبيعي أن أي تهنئة تكون رسمية.. فالمجلس الملي اقترح على الأنبا بنيامين أنه يهنئه قبل ما الناس تهنئه وتكون حاجة ودية وأكيد هيتبسط يعني أن أسقف المنوفية هنئه.. في الوقت ده الأنبا بنيامين كان عنده 29 سنة وكان أسقف بقاله حوالي 3 شهور.<br>
@@ -174,17 +174,6 @@ export const data = [
     bookmarked: false,
   },
   {
-    name: 'دير المُحرق',
-    id: 'AlMuharraq',
-    imageURL: 'https://media.gemini.media/img/original/2021/4/30/2021_4_30_23_30_40_941.jpg',
-    topics: ['Coming Soon'],
-    resourses: [''],
-    centry: [],
-    category: ['place'],
-    reco: true,
-    bookmarked: false,
-  }, // ITEM:
-  {
     name: ' البابا كيرلس عمود الدين',
     id: 'kerelos1',
     imageURL: 'https://i.pinimg.com/736x/9c/3f/ed/9c3fed7b3cbd15b5dc49d2c0b1e8111a.jpg',
@@ -198,7 +187,7 @@ export const data = [
   {
     name: 'البابا ديسقورس',
     id: 'descoros1',
-    imageURL: 'https://www.difa3iat.com/wp-content/uploads/2023/03/difa3iat.com-2023-03-11_14-45-37_417265-jpg.webp',
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBAu4Jpr_3y0O3G2auoXxQqQBQVFBEvcFM_w&s',
     topics: ['Coming Soon'],
     resourses: [''],
     centry: [],
@@ -209,7 +198,17 @@ export const data = [
 ];
 
 
-
+// {
+//   name: 'دير المُحرق',
+//   id: 'AlMuharraq',
+//   imageURL: 'https://media.gemini.media/img/original/2021/4/30/2021_4_30_23_30_40_941.jpg',
+//   topics: ['Coming Soon'],
+//   resourses: [''],
+//   centry: [],
+//   category: ['place'],
+//   reco: true,
+//   bookmarked: false,
+// }, // ITEM:
 
 
 // {

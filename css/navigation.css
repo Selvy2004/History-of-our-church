@@ -1,0 +1,56 @@
+/* NAVIGATION */
+.navigation{
+  /* background-color:#f2e7c3; */
+  position: relative;
+
+  height: 10rem;
+  background-color:#e3d5eb;
+  border-radius: 1.2rem 1.2rem 0 0;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.6rem;
+  font-size: 2.4rem;
+}
+
+.logo{
+  margin-right: 2rem;
+  font-size: 2.8rem;
+}
+
+.nav-list{
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  height: 100%;
+
+}
+
+.nav-btn-container{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-btn{
+  /* background-color: #f2e7c3; */
+  display: block;
+  background-color: #e3d5eb;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: inherit;
+}
+
+
+.bookmark-word{
+  font-size: 2rem;
+  font-weight: 600;
+}

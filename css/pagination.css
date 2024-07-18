@@ -1,0 +1,33 @@
+
+/* Pagination */
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2.4rem;
+}
+.btn-inline{
+  width: 12rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: var(--secondary-color--);
+  border: none;
+  outline: none;
+  margin-bottom: 3.2rem;
+  transition: all 0.3s;
+}
+.btn-inline:hover{
+  background-color: var(--marker-color--);
+}
+.page-pagination{
+  color: var(--beige-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+

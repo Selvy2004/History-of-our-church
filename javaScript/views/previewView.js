@@ -56,7 +56,6 @@ class PreviewView extends View {
 
   controlPagination(goToPage) {
     if (!this._mainData) return;
-    console.log(this._mainData);
     this.render(paginationView.getSearchResultsPage(this._mainData, goToPage));
     paginationView.render(this._mainData, goToPage);
   }
@@ -73,5 +72,12 @@ class PreviewView extends View {
     });
   }
 
+  scrollToMainResults() {
+    parent.addEventListener('click', (e) => {
+      const previewItem = e.target.closest('.preview-link');
+      if (!previewItem) return;
+      document.querySelector('.pagination').scrollIntoView({ behavior: 'smooth' });
+    })
+  }
 }
 export default new PreviewView();

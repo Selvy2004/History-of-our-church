@@ -85,9 +85,9 @@ class MainResultView extends View {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
 
     this._parentElement.addEventListener('click', function (e) {
-      e.preventDefault();
       const arrowBtn = e.target.closest('.arrow-icon');
       if (!arrowBtn) return;
+      e.preventDefault();
       const currentTransform = arrowBtn.style.transform;
       const isRotated = currentTransform.includes('180deg');
       arrowBtn.style.transform = isRotated ? 'rotate(0deg)' : 'rotate(180deg)';

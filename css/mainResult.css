@@ -8,25 +8,23 @@
   padding: 1.2rem;
   border-radius: 1.2rem;
   border: 2px solid var(--marker-color--);
-  position: relative;
   z-index: 100;
   padding: 2.4rem;
 }
 
 .main-result{
   display: flex;
-  /* align-items: flex-start; */
-  /* justify-content: start; */
   flex-direction: column;
-  width: 116rem;
+  width: 116rem; 
+  /* media query */
 }
+
 .img-and-title{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 
 .coming-soon{
   font-size: 6rem;
@@ -97,12 +95,11 @@
   gap: 1.2rem;
 }
 
-.hidden{
-  display: none;
-  opacity: 0;
-}
-
 .content{
   width: auto;
   height: auto;
+}
+
+.message{
+  font-size: 3.2rem;
 }

@@ -1,8 +1,8 @@
 /* NAVIGATION */
+
 .navigation{
   /* background-color:#f2e7c3; */
   position: relative;
-
   height: 10rem;
   background-color:#e3d5eb;
   border-radius: 1.2rem 1.2rem 0 0;
@@ -49,6 +49,16 @@
   box-sizing: inherit;
 }
 
+.bookmark-item-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-purple--);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: translate(-80%,-585%);
+}
 
 .bookmark-word{
   font-size: 2rem;

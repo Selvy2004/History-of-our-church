@@ -7,13 +7,17 @@ class BookmarksView extends View {
   _parentElement = document.querySelector('.bookmarks-list');
   _bookmarksArr = bookmarksArr;
 
-  addHandlerRander(handler) {
-    window.addEventListener('load', handler);
+  _generateMarkup() {
+    return this._data.map(item => `
+        <a class="bookmark-item" href="#${item.id}">
+          <div class="parent-bookmark-item-img"><img src="${item.imageURL}" class="bookmark-image" alt="${item.name}"/></div>
+          <p class="preview-name">${item.name}</p>
+        </a> 
+    `).join('');
   }
 
   bookmarkBtnEventHandler() {
     const mainResultParent = document.querySelector('.main-result-parent');
-    console.log(bookmarksArr);
 
     mainResultParent.addEventListener('click', (e) => {  // arrow function because of this keyword
       const btn = e.target.closest('.bookmark-item-btn');
@@ -22,8 +26,6 @@ class BookmarksView extends View {
 
       const id = window.location.hash.slice(1);
       const curitem = this.mainResultData(id);
-      console.log(curitem);
-
       const bookmarksvg = document.querySelector('.bookmark-svg');
 
       // Un bookmark
@@ -51,7 +53,41 @@ class BookmarksView extends View {
   }
 
   showBookmarksBtn() {
+    parent.addEventListener('click', (e) => {
+      const bookamrkBtn = e.target.closest('.bookmark-btn-container');
+      if (!bookamrkBtn) return;
+      if (bookmarksArr.length === 0) {
+        this._clear();
+        const markup = this.emptyBookMark();
+        this._parentElement.insertAdjacentHTML('afterbegin', markup);
+        return;
+      };
+      this._clear();
+      this.render(bookmarksArr);
+    });
 
+    parent.addEventListener('click', (e) => {
+      const bookmarkItem = e.target.closest('.bookmark-item');
+      if (!bookmarkItem) return;
+      closeBookmarkWindowfunc();
+      document.querySelector('.pagination').scrollIntoView({ behavior: 'smooth' });
+    })
+  }
+
+  closeBookmarkWindowfunc() {
+    bookmarkWindow.classList.add('hidden-window');
+    overlay.classList.remove('overlay');
+  }
+
+  emptyBookMark() {
+    return `
+      <div class="empty-bookmarks">
+        <svg class="icon-smile">
+          <use href="img/icons.svg#icon-smile" ></use>
+        </svg>            
+        <p>.No bookmarks yet</p>
+      </div>
+    `;
   }
 
   mainResultData(id) {

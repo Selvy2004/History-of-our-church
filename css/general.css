@@ -62,6 +62,7 @@
   /* --very-light-gold--: #fffbe6;  */
   /* fcdcda */
   /* --marker-color--: #9a8ea1; */
+
   --primary-color--: #dccbe6;
   --very-light-purple--: #f8f0f9; 
   --secondary-color--: #f6a19b;
@@ -99,7 +100,7 @@ body{
   color: var(--dark-gray--);
   font-weight: 500;
   line-height: 1.6;
-  background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
 }
 
 .container{
@@ -108,33 +109,17 @@ body{
   background-color: var(--very-light-purple--);
   border-radius: 1.2rem;
   box-shadow: 5rem 2rem 6rem .5rem rgba(97, 85, 81, .2);
+  position: relative;
 }
 
 
-/* 
-.bookmarks {
-  box-sizing: inherit;
-  padding: 1rem 0;
-  position: absolute;
-  left: 0rem;
-  bottom: -180%; 
-  z-index: 10;
-  width: 40rem;
-  border-radius: 1.2rem;
-  background-color: #fff;
-  box-shadow: 0 .8rem 5rem 2rem rgba(97, 85, 81, .1);
-  visibility: hidden;
+/* Hidden Class */
+.hidden{
+  display: none;
   opacity: 0;
-  transition: all 0.5s 0.2s;
-} */
+}
 
-/* .bookmark-btn-container:hover .bookmarks,
-.bookmark-btn-container:hover ~ .bookmarks {
-  visibility: visible;
-  opacity: 1;
-} */
-
-
+/* ICONS STYLES */
 .icon{
   width: 4.8rem;
 }
@@ -151,72 +136,8 @@ body{
   fill: var(--marker-color--);
   width: 2.8rem;
 }
-
-
-/* spinner */
-.spinner {
-  margin: 5rem auto;
-
-  text-align: center;
-
-}
-.spinner svg {
-  height: 6rem;
-  width: 6rem;
-  fill: var(--marker-color--);
-  animation: rotate 2s infinite linear;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-.bookmark-item-btn{
-  /* width:auto;   */
-  /* height: auto;   */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border-radius: 50%; */
-  /* background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--)); */
-  /* background-color: var(--secondary-color--); */
-  background-color: var(--very-light-purple--);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  top: -3%;
-  right: 10%;
-  
-}
-
 .icon-bookmark-item{
   fill: var(--marker-color--);
   width: 8rem;
   height: 8rem;
-}
-/* ///////////////////////////////////// */
-
-.bookmark-image{
-  width: 10rem;
-  height: 10rem;
-  background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
-  border-radius: 1.2rem;
-  border-radius: 50%;
-  
-}
-
-.bookmark-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  /* border-bottom: 1px solid var(--marker-color--); */
-  padding:0.6rem;
 }

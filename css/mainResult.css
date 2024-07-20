@@ -28,7 +28,7 @@
 
 .coming-soon{
   font-size: 6rem;
-  color:#dc7b75;
+  color: var(--marker-color--);
   opacity: 0.5;
 }
 
@@ -36,7 +36,7 @@
   height: 32rem;
   width: 22rem;
   border-radius: 1.2rem;
-  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  background-image: var(--light-linear--);
   box-shadow: 0 4rem 4rem .2rem rgba(97, 85, 81, .2);
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .image-subtopic{
-  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  background-image: var(--light-linear--);
   width: 30%;
   border-radius: 1.2rem;
   margin-top: 2rem;
@@ -57,9 +57,9 @@
 
 .result-title{
   transform: translate(-2%, -60%) skewY(-8deg);
-  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));  
+  background-image: var(--light-linear-left--);  
   /* color: #ebe8ec; */
-  color: #555;
+  color: var(--secondary-gray--);
   font-size: 3.2rem;
   margin-bottom: 4.8rem;
   display: inline-block;

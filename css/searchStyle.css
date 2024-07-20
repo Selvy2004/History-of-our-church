@@ -26,7 +26,7 @@
 }
 
 .search-field:focus{
-  color: #333;
+  color: var(--third-gray--);
 }
 .search-input::placeholder{
   color: #999;
@@ -34,7 +34,7 @@
 
 .search-btn{
   padding: 1.7rem 4rem;
-  background-color: var(--secondary-color--);
+  background-color: var(--btns-color--);
   border: none;
   outline: none;
   cursor: pointer;
@@ -55,12 +55,12 @@
 .search-icon {
   width: 2rem;
   height: 2rem;
-  fill: var(--beige-color);
+  fill: var(--beige-color-word);
 }
 
 .search-btn span {
   vertical-align: middle;
-  color: var(--beige-color);
+  color: var(--beige-color-word);
   font-weight: 600;
   font-size: 2rem;
 }

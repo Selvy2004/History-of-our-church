@@ -20,7 +20,7 @@ class PaginationView extends View {
           <svg class="search-icon">
             <use href="img/icons.svg#icon-arrow-right"></use>
           </svg>
-          <span class="page-pagination">${curPage + 1} Page</span>
+          <span class="page-pagination">${curPage + 1} Slide</span>
         </button>
       `;
     }
@@ -32,11 +32,11 @@ class PaginationView extends View {
           <svg class="search-icon">
             <use href="img/icons.svg#icon-arrow-right"></use>
           </svg>
-          <span class="page-pagination">${curPage + 1} Page</span>
+          <span class="page-pagination">${curPage + 1} Slide</span>
         </button>
 
         <button data-goto="${curPage - 1}" class="btn-inline pagination-btn-prev">
-          <span class="page-pagination">Page ${curPage - 1}</span>
+          <span class="page-pagination">Slide ${curPage - 1}</span>
           <svg class="search-icon">
             <use href="img/icons.svg#icon-arrow-left"></use>
           </svg>
@@ -48,7 +48,7 @@ class PaginationView extends View {
     if (curPage === numPages && numPages !== 1) {
       return `
         <button data-goto="${curPage - 1}" class="btn-inline pagination-btn-prev">
-          <span class="page-pagination">Page ${curPage - 1}</span>
+          <span class="page-pagination">Slide ${curPage - 1}</span>
           <svg class="search-icon">
             <use href="img/icons.svg#icon-arrow-left"></use>
           </svg>

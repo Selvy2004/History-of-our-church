@@ -27,7 +27,22 @@ overlay.addEventListener('click', function (e) {
   return;
 });
 
-// 
+// Dark mode
+const darkBtn = document.querySelector('.moon-btn');
+let theme = localStorage.getItem('theme') || 'light';
 
+darkBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  document.querySelector('.moon-icon').classList.toggle('moon-fill');
+  document.body.classList.contains('dark-mode') ? theme = 'dark' : theme = 'light';
+  localStorage.setItem('theme', theme);
+});
 
-
+window.addEventListener('load', () => {
+  if (theme === 'dark') {
+    console.log('dark');
+    document.body.classList.add('dark-mode');
+    document.querySelector('.moon-icon').classList.add('moon-fill');
+    return;
+  };
+});

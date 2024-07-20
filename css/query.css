@@ -1,29 +1,4 @@
 
 /* 912 px */
 @media(max-width : 57rem){
-  .nav-list {
-
-  }
-
-  .nav-btn-container {
-    display: none; /* Hide the nav-btn-container on smaller screens */
-  }
-
-  .nav-item {
-
-  }
-
-  .logo {
-
-  }
-
-  .bookmark-btn-container {
-  }
-
-  .bookmark-btn {
-  
-  }
-
-  .bookmarks {
-  }
 }

@@ -1,10 +1,9 @@
 /* NAVIGATION */
 
 .navigation{
-  /* background-color:#f2e7c3; */
   position: relative;
   height: 10rem;
-  background-color:#e3d5eb;
+  background-color: var(--nav-color--);
   border-radius: 1.2rem 1.2rem 0 0;
   margin-top: 4rem;
   display: flex;
@@ -40,7 +39,7 @@
 .nav-btn{
   /* background-color: #f2e7c3; */
   display: block;
-  background-color: #e3d5eb;
+  background-color: var(--nav-color--);
   display: flex;
   align-items: center;
   border: none;
@@ -63,4 +62,5 @@
 .bookmark-word{
   font-size: 2rem;
   font-weight: 600;
+  color:var(--primary-gray--);
 }

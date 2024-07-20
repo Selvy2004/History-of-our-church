@@ -30,7 +30,7 @@
 .bookmark-image{
   width: 10rem;
   height: 10rem;
-  background-image: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  background-image: var(--light-linear--);
   border-radius: 1.2rem;
   transition: all 0.3s;
 }
@@ -59,7 +59,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 1000;
-  background-color: #fff;
+  background-color: var(--white-color);
   box-shadow: 5rem 2rem 6rem .5rem rgba(97, 85, 81, .2);
   border-radius: 1.2rem;
   transition: all 0.5s;
@@ -82,7 +82,8 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--white-color);
+  color: var(--secondary-gray--txt);
   font-size: 3.8rem;
   margin-bottom: 3.2rem;
 }

@@ -50,28 +50,66 @@
              
              /* transform: translate(-50%, 20%) skewY(-6deg) */
              
-/*
---secondary-color: #D4AF37;
---primary-color:#FFD700; 
+             /* --primary-color--: #FFEF99; */
+             /* --very-light-gold--: #fffbe6;  */
+            /* background-color:#f2e7c3;  navigation*/ 
 
-*/
+             /* fcdcda */
+             /* --secondary-color: #D4AF37;
+             --primary-color:#FFD700;  */
+/*
 
 /* GENERAL */
 :root {
-  /* --primary-color--: #FFEF99; */
-  /* --very-light-gold--: #fffbe6;  */
-  /* fcdcda */
   /* --marker-color--: #9a8ea1; */
 
   --primary-color--: #dccbe6;
-  --very-light-purple--: #f8f0f9; 
-  --secondary-color--: #f6a19b;
   --light-purple--: #e0d0e9;
-  --marker-color--: #dc7b75;
+  --very-light-purple--: #f8f0f9; 
+  --nav-color--: #e3d5eb;
 
-  --dark-gray--: #222;
+  --secondary-color--: #f6a19b;
+  --marker-color--: #dc7b75;
+  --btns-color--:#f6a19b;
+  --icons-color--: #dc7b75;
+
+  --primary-gray--: #222;
+  --secondary-gray--: #555;
+  --secondary-gray--txt: #555;
+
+  --third-gray--: #333;
+
   --beige-color: #F5F5DC; /* Beige */
+  --beige-color-word: #F5F5DC; /* Beige */
   --white-color: #FFFFFF; 
+
+  --light-linear-left--: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  --light-linear--: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  --dark-linear--: linear-gradient(to top left, #c5817c,var(--marker-color--), #9a8ea1, #7b7281);
+}
+
+
+body.dark-mode {
+  --primary-color--: #9a8ea1;
+  --light-purple--: #e0d0e9;
+  --nav-color--: #424242;
+  --beige-color-word: #222; 
+  
+  --very-light-purple--: #121B22;
+
+  --btns-color--:#dccbe6;
+  --icons-color--: #dccbe6;
+
+  --secondary-color--: #898d91;
+  --marker-color--: #aea5b4;
+  
+  --primary-gray--: #FAFAFA;
+  --secondary-gray--: #222;
+  --secondary-gray--txt: #eee;
+  --white-color: #424242;
+  --light-linear-left--: linear-gradient(to left,#71767a, var(--secondary-color--),  var(--primary-color--),#dccbe6);
+  --light-linear--: linear-gradient(to top left,#9d92a3,var(--marker-color--), #e0d0e9);
+  --dark-linear--: linear-gradient(to top left,#9d92a3,var(--marker-color--), #e0d0e9);
 }
 
 *{
@@ -97,10 +135,10 @@ html{
 body{
   font-family: "Noto Sans Arabic", sans-serif;
   font-size: 1.8rem;
-  color: var(--dark-gray--);
+  color: var(--primary-gray--);
   font-weight: 500;
   line-height: 1.6;
-  background-image: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
+  background-image: var(--light-linear-left--);
 }
 
 .container{
@@ -111,7 +149,6 @@ body{
   box-shadow: 5rem 2rem 6rem .5rem rgba(97, 85, 81, .2);
   position: relative;
 }
-
 
 /* Hidden Class */
 .hidden{
@@ -126,18 +163,21 @@ body{
 .moon-icon{
   stroke-width: 1.5px;
   fill:none;
-  stroke: var(--marker-color--);
+  stroke: var(--icons-color--);
+}
+.moon-fill{
+  fill: var(--beige-color);
 }
 .bookmark-icon{
-  fill:var(--marker-color--);
+  fill:var(--icons-color--);
   height: 3.2rem;
 }
 .icon-smile{
-  fill: var(--marker-color--);
+  fill: var(--icons-color--);
   width: 2.8rem;
 }
 .icon-bookmark-item{
-  fill: var(--marker-color--);
+  fill: var(--icons-color--);
   width: 8rem;
   height: 8rem;
 }

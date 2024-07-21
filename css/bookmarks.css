@@ -38,7 +38,8 @@
   overflow:hidden;
 }
 .parent-bookmark-item-img:hover .bookmark-image {
-  transform: scale(1.2);
+  transform: scale(1.2); 
+  /* NEED to edit */
 }
 
 .empty-bookmarks{
@@ -48,7 +49,6 @@
   gap: 0.6rem;
   font-size: 2.4rem;
 }
-
 
 .bookmark-window{
   width: 70rem;

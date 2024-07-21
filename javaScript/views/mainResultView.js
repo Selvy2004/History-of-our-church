@@ -1,7 +1,6 @@
 import View from "./view.js";
 import { bookmarksArr } from "./bookMarkView.js";
 
-
 class MainResultView extends View {
   _parentElement = document.querySelector('.main-result-parent');
 
@@ -28,12 +27,12 @@ class MainResultView extends View {
     `;
   }
 
-
   _comingSoon() {
     return `
       <div class="coming-soon">...Coming Soon</div>
     `
   }
+
   _generateTopicks(topic) {
     return `
       <li class="result-topic">
@@ -73,7 +72,6 @@ class MainResultView extends View {
   `;
   }
 
-
   checkIfBookmarked() {
     const isBookmarked = bookmarksArr.some(bookmark => bookmark.id === this._data.id);
     this._data.bookmarked = isBookmarked;
@@ -96,7 +94,5 @@ class MainResultView extends View {
       content.classList.toggle('hidden');
     });
   }
-
-
 };
 export default new MainResultView();

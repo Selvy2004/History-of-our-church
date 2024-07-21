@@ -39,7 +39,6 @@
 .preview-link-active,
 .preview-link:hover{
   transform: scale(1.1);
- 
 }
 
 .preview-link-active::after {
@@ -52,9 +51,9 @@
 }
 
 .preview-img{
-  background-image: var(--light-linear--);
   width: 12.5rem;
   height: 15rem;
+  background-image: var(--light-linear--);
   border-radius: 1.2rem;
 }
 .preview-name{

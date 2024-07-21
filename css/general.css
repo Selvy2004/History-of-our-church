@@ -86,8 +86,10 @@
   --light-linear-left--: linear-gradient(to left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
   --light-linear--: linear-gradient(to top left, var(--secondary-color--),#f7aca8, var(--light-purple--), var(--primary-color--));
   --dark-linear--: linear-gradient(to top left, #c5817c,var(--marker-color--), #9a8ea1, #7b7281);
-}
 
+  --shadow-nav-bar--: rgba(0, 0, 0, 0.08);
+
+}
 
 body.dark-mode {
   --primary-color--: #9a8ea1;
@@ -99,7 +101,7 @@ body.dark-mode {
 
   --btns-color--:#dccbe6;
   --icons-color--: #dccbe6;
-
+  
   --secondary-color--: #898d91;
   --marker-color--: #aea5b4;
   
@@ -110,6 +112,7 @@ body.dark-mode {
   --light-linear-left--: linear-gradient(to left,#71767a, var(--secondary-color--),  var(--primary-color--),#dccbe6);
   --light-linear--: linear-gradient(to top left,#9d92a3,var(--marker-color--), #e0d0e9);
   --dark-linear--: linear-gradient(to top left,#9d92a3,var(--marker-color--), #e0d0e9);
+  --shadow-nav-bar--: rgba(225, 225, 225, 0.08);
 }
 
 *{
@@ -139,6 +142,8 @@ body{
   font-weight: 500;
   line-height: 1.6;
   background-image: var(--light-linear-left--);
+  overflow-x: hidden;
+  transition: all 0.3s;
 }
 
 .container{
@@ -164,6 +169,7 @@ body{
   stroke-width: 1.5px;
   fill:none;
   stroke: var(--icons-color--);
+  transition: all 0.3s;
 }
 .moon-fill{
   fill: var(--beige-color);
@@ -180,4 +186,8 @@ body{
   fill: var(--icons-color--);
   width: 8rem;
   height: 8rem;
+}
+.youtube-icon{
+  fill: var(--icons-color--);
+  width: 6rem;
 }

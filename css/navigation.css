@@ -1,5 +1,4 @@
 /* NAVIGATION */
-
 .navigation{
   position: relative;
   height: 10rem;
@@ -11,6 +10,7 @@
   align-items: center;
   margin-bottom: 5.6rem;
   font-size: 2.4rem;
+  
 }
 
 .logo{

@@ -46,6 +46,10 @@ class PreviewView extends View {
       resultsWord.textContent = 'Results';
       this._mainData = mainData;
 
+      if (window.innerWidth <= 1100) {
+        document.querySelector('.reco-result').scrollIntoView({ behavior: 'smooth' });
+      }
+
       this.renderSpinner();
       setTimeout(() => {
         this.render(paginationView.getSearchResultsPage(mainData));

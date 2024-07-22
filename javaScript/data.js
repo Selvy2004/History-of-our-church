@@ -115,7 +115,7 @@ export const data = [
     resourses: [''],
     centry: [1],
     category: ['pope', 'character'],
-    reco: false,
+    reco: true,
     bookmarked: false,
   }, // ITEM:
   {
@@ -148,7 +148,7 @@ export const data = [
     resourses: [''],
     centry: [],
     category: ['pope', 'character'],
-    reco: false,
+    reco: true,
     bookmarked: false,
   }, // ITEM:
   {
@@ -159,7 +159,7 @@ export const data = [
     resourses: [''],
     centry: [],
     category: ['character'],
-    reco: false,
+    reco: true,
     bookmarked: false,
   },
   {
@@ -170,7 +170,7 @@ export const data = [
     resourses: [''],
     centry: [],
     category: ['character'],
-    reco: false,
+    reco: true,
     bookmarked: false,
   },
   {

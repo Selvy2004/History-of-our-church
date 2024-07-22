@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   width: 116rem; 
-  /* media query */
 }
 
 .img-and-title{
@@ -48,8 +47,8 @@
 
 .image-subtopic{
   background-image: var(--light-linear--);
-  width: 12.5rem;
-  height: 15rem;
+  width: 20rem;
+  height: 12.5rem;
   border-radius: 1.2rem;
   margin-top: 2rem;
 }

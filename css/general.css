@@ -175,19 +175,20 @@ body{
   fill: var(--beige-color);
 }
 .bookmark-icon{
-  fill:var(--icons-color--);
   height: 3.2rem;
+  fill:var(--icons-color--);
 }
 .icon-smile{
-  fill: var(--icons-color--);
   width: 2.8rem;
+  fill: var(--icons-color--);
 }
 .icon-bookmark-item{
+  width:8rem;
+  height: 7.5rem;
   fill: var(--icons-color--);
-  width: 8rem;
-  height: 8rem;
 }
+
 .youtube-icon{
-  fill: var(--icons-color--);
   width: 6rem;
+  fill: var(--icons-color--);
 }

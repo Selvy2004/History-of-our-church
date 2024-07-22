@@ -50,7 +50,7 @@ class PreviewView extends View {
         document.querySelector('.reco-result').scrollIntoView({ behavior: 'smooth' });
       }
 
-      this.renderSpinner();
+      // this.renderSpinner();
       setTimeout(() => {
         this.render(paginationView.getSearchResultsPage(mainData));
         paginationView.render(mainData);

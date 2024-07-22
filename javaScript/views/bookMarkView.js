@@ -11,7 +11,7 @@ class BookmarksView extends View {
     return this._data.map(item => `
         <a class="bookmark-item" href="#${item.id}">
           <div class="parent-bookmark-item-img"><img src="${item.imageURL}" class="bookmark-image" alt="${item.name}"/></div>
-          <p class="preview-name">${item.name}</p>
+          <p class="preview-name bookmark-name">${item.name}</p>
         </a> 
     `).join('');
   }
@@ -83,7 +83,7 @@ class BookmarksView extends View {
     return `
       <div class="empty-bookmarks">
         <svg class="icon-smile">
-          <use href="img/icons.svg#icon-smile" ></use>
+          <use href="img/icons.svg#icon-smile"></use>
         </svg>            
         <p>.No bookmarks yet</p>
       </div>

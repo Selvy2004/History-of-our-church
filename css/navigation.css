@@ -1,16 +1,15 @@
 /* NAVIGATION */
 .navigation{
-  position: relative;
   height: 10rem;
-  background-color: var(--nav-color--);
-  border-radius: 1.2rem 1.2rem 0 0;
+  position: relative;
   margin-top: 4rem;
+  margin-bottom: 5.6rem;
+  font-size: 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5.6rem;
-  font-size: 2.4rem;
-  
+  background-color: var(--nav-color--);
+  border-radius: 1.2rem 1.2rem 0 0;
 }
 
 .logo{
@@ -63,4 +62,7 @@
   font-size: 2rem;
   font-weight: 600;
   color:var(--primary-gray--);
+}
+.soon{
+  font-size: 1.2rem;
 }

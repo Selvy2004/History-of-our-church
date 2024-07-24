@@ -152,7 +152,7 @@ export const data = [
     bookmarked: false,
   }, // ITEM:
   {
-    name: ' القديس اكليمندس السكندرى ',
+    name: 'اكليمندس السكندرى ',
     id: 'Clement-of-Alexandria',
     imageURL: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Clement_of_Ohrid%2C_an_icon_from_the_second_half_of_the_14th_century_%282%29.jpg',
     topics: ['Coming Soon'],
@@ -196,17 +196,6 @@ export const data = [
     bookmarked: false,
   },
   {
-    name: 'القديس أغناطيوس الأنطاكي',
-    id: ' IgnatiusofAntioch',
-    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7qCopbHaful8oo3FiTK1vOUvvBHJ1tO6hA&s',
-    topics: ['Coming Soon'],
-    resourses: [''],
-    centry: [1, 2],
-    category: ['character'],
-    reco: true,
-    bookmarked: false,
-  },
-  {
     name: 'البابا كيرلس السادس',
     id: 'kereloc6',
     imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVmCRZRrrQOxboXfYr3K-FGchP465k5jGOsw&s',
@@ -228,7 +217,33 @@ export const data = [
     reco: true,
     bookmarked: false,
   },
+  {
+    name: 'القديس أغناطيوس الأنطاكي',
+    id: 'ignatiusofantioch',
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7qCopbHaful8oo3FiTK1vOUvvBHJ1tO6hA&s',
+    topics: ['Coming Soon'],
+    resourses: [''],
+    centry: [],
+    category: ['character'],
+    reco: true,
+    bookmarked: false,
+  },
 ];
+
+
+// {
+//   name: '',
+//   id: '',
+//   imageURL: '',
+//   topics: ['Coming Soon'],
+//   resourses: [''],
+//   centry: [],
+//   category: ['character'],
+//   reco: true,
+//   bookmarked: false,
+// },
+
+
 
 
 // {

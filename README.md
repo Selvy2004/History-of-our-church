@@ -75,12 +75,3 @@ Contributions are welcome! To contribute to this project, follow these steps:
 ## License
 
 This project is licensed under a custom license. See the [LICENSE](LICENSE) file for details.
-
-# My Project
-
-![Build Status](https://img.shields.io/github/workflow/status/owner/repo/Workflow%20Name)
-![License](https://img.shields.io/github/license/owner/repo)
-![Code Size](https://img.shields.io/github/languages/code-size/owner/repo)
-
-![Custom Badge](https://img.shields.io/badge/your_text-Your_Value-brightgreen)
-

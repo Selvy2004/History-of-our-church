@@ -71,3 +71,7 @@ Contributions are welcome! To contribute to this project, follow these steps:
     git push origin feature/your-feature-name
     ```
 6. **Create a Pull Request**: Open a pull request from your forked reposi
+
+## License
+
+This project is licensed under a custom license. See the [LICENSE](LICENSE) file for details.

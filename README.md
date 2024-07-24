@@ -2,6 +2,18 @@
 
 Welcome to the History of the Orthodox Church website repository. This project aims to provide an in-depth exploration of the Orthodox Church's history, its traditions, key figures, and significant events.
 
+## Description
+
+This repository contains the code for a website dedicated to exploring the history of the Orthodox Church. It features a comprehensive timeline, biographies of significant figures, interactive maps, and detailed articles on various aspects of Orthodox history. The website supports both light and dark modes, ensuring a user-friendly experience. Users can navigate through different sections, view related content, and bookmark items for future reference.
+
+## Topics
+
+- **Orthodox Church History**: Detailed timeline and significant events.
+- **Biographies**: Profiles of key figures in Orthodox history.
+- **Interactive Maps**: Visual representation of historical events and locations.
+- **Articles and Essays**: In-depth exploration of Orthodox Church history.
+- **User Features**: Bookmark items for easy access and toggle between light and dark mode.
+
 ## Table of Contents
 
 1. [Features](#features)
@@ -18,7 +30,7 @@ Welcome to the History of the Orthodox Church website repository. This project a
 - **Interactive Maps**: Visual representations of historical events and locations.
 - **Articles and Essays**: In-depth articles on various aspects of Orthodox Church history.
 - **Light and Dark Mode**: User-friendly themes for different viewing preferences.
-- **Bookmark Feature**: Allows users to bookmark and easily navigate to their favorite sections of the website.
+- **Bookmark Feature**: Save and access your favorite sections easily.
 
 ## Technologies Used
 
@@ -27,7 +39,7 @@ Welcome to the History of the Orthodox Church website repository. This project a
 - **SVG Icons**: Custom icons for navigation and other UI elements.
 - **CSS Effects**: Smooth transitions and effects for a better user experience.
 - **Version Control**: Managed with Git and hosted on GitHub.
-- **Development Environment**: Visual Studio Code (VSCode) for coding and project management.
+- **Code Editor**: Developed using Visual Studio Code (VSCode).
 
 ## Installation
 
@@ -51,6 +63,7 @@ To set up the project locally, follow these steps:
 - Open the `index.html` file in your web browser to explore the website.
 - Navigate through the sections using the menu.
 - Toggle between light and dark mode using the theme switcher.
+- Bookmark items to save and quickly access your favorite sections.
 
 ## Contributing
 
@@ -70,7 +83,7 @@ Contributions are welcome! To contribute to this project, follow these steps:
     ```bash
     git push origin feature/your-feature-name
     ```
-6. **Create a Pull Request**: Open a pull request from your forked reposi
+6. **Create a Pull Request**: Open a pull request from your forked repository.
 
 ## License
 

@@ -161,7 +161,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: 'العلامة اوريجانوس',
     id: 'origanos',
@@ -172,7 +172,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: ' البابا كيرلس عمود الدين',
     id: 'kerelos1',
@@ -183,7 +183,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: 'البابا ديسقورس',
     id: 'descoros1',
@@ -194,7 +194,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: 'البابا كيرلس السادس',
     id: 'kereloc6',
@@ -205,7 +205,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: 'القديس يوحنا الحبيب',
     id: 'john1',
@@ -216,7 +216,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
   {
     name: 'القديس أغناطيوس الأنطاكي',
     id: 'ignatiusofantioch',
@@ -227,7 +227,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  },
+  }, // ITEM:
 ];
 
 

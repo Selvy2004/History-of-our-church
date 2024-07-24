@@ -3,7 +3,7 @@
 /* 1100px */
 @media(max-width : 68.75rem){
   .navigation{
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     padding-left: 1.2rem;
     position: relative;
   }

@@ -26,6 +26,7 @@ Welcome to the History of the Orthodox Church website repository. This project a
 - **SVG Icons**: Custom icons for navigation and other UI elements.
 - **CSS Effects**: Smooth transitions and effects for a better user experience.
 - **Version Control**: Managed with Git and hosted on GitHub.
+- **Development Environment**: Visual Studio Code (VSCode) for coding and project management.
 
 ## Installation
 

@@ -18,6 +18,7 @@ Welcome to the History of the Orthodox Church website repository. This project a
 - **Interactive Maps**: Visual representations of historical events and locations.
 - **Articles and Essays**: In-depth articles on various aspects of Orthodox Church history.
 - **Light and Dark Mode**: User-friendly themes for different viewing preferences.
+- **Bookmark Feature**: Allows users to bookmark and easily navigate to their favorite sections of the website.
 
 ## Technologies Used
 

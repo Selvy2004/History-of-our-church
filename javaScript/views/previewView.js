@@ -18,8 +18,11 @@ class PreviewView extends View {
 
   recommendationPreview(data) {
     this._mainData = data;
-    this.render(paginationView.getSearchResultsPage(data));
-    paginationView.render(data);
+    this.renderSpinner();
+    setTimeout(() => {
+      this.render(paginationView.getSearchResultsPage(data));
+      paginationView.render(data);
+    }, 400);
   }
 
   searchBtn(allData) {
@@ -32,25 +35,35 @@ class PreviewView extends View {
       e.preventDefault();
       searchField.setAttribute('placeholder', 'بحث ...');
       resultsWord.textContent = 'Recommendation';
+      document.querySelector('.reco-title-container').style.marginBottom = '2rem';
 
+      // NO input or white spaces
       if (!searchField.value || searchField.value === ' ') return;
       mainData = allData.filter(obj => obj.name.includes(searchField.value) || obj.subtopic?.name.includes(searchField.value));
-
       searchField.value = '';
 
+      // No Results
       if (mainData.length === 0) {
         searchField.setAttribute('placeholder', 'لا توجد نتائج...');
         this.recommendationPreview(this._data.filter(obj => obj.reco === true));
         return;
       };
+
+      // Results
       resultsWord.textContent = 'Results';
       this._mainData = mainData;
+
+      // back to recommendation btn
+      document.querySelector('.btn-reco-container').innerHTML = '';
+      this.backToRecoMarkup();
+      document.querySelector('.reco-title-container').style.marginBottom = '0';
 
       if (window.innerWidth <= 1100) {
         document.querySelector('.reco-result').scrollIntoView({ behavior: 'smooth' });
       }
-
-      // this.renderSpinner();
+      // Render Spinner
+      this.renderSpinner();
+      // View it perfectly ^_^
       setTimeout(() => {
         this.render(paginationView.getSearchResultsPage(mainData));
         paginationView.render(mainData);
@@ -82,6 +95,28 @@ class PreviewView extends View {
       if (!previewItem) return;
       document.querySelector('.pagination').scrollIntoView({ behavior: 'smooth' });
     })
+  }
+
+  backToRecommendation(data) {
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.back-to-reco');
+      if (!btn) return;
+      btn.classList.add('hidden');
+      document.querySelector('.btn-reco-container').innerHTML = '';
+      this.recommendationPreview(data);
+      document.querySelector('.reco-result').textContent = 'Recommendation';
+      document.querySelector('.reco-title-container').style.marginBottom = '2rem';
+    });
+  }
+
+  backToRecoMarkup() {
+    const markup = `
+      <div class="back-to-reco">
+        <p>back to Recomendation</p> 
+        <span class="back-to-reco-arrow">&larr;</span>
+      </div>
+    `;
+    document.querySelector('.btn-reco-container').insertAdjacentHTML('afterbegin', markup);
   }
 }
 export default new PreviewView();

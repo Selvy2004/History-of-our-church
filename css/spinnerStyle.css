@@ -2,6 +2,7 @@
 .spinner {
   margin: 5rem auto;
   text-align: center;
+  grid-column: 1/-1;
 }
 .spinner svg {
   height: 6rem;

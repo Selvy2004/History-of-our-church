@@ -26,5 +26,6 @@ const init = function () {
   bookMarkView.showBookmarksBtn();
   previewView.scrollToMainResults();
   resultsListView.listResultsEvents();
+  previewView.backToRecommendation(data);
 }
 init()

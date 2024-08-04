@@ -1,32 +1,31 @@
-
 /* preview */
-.previews-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.preview-list{
-  padding: 2rem 12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 1.2rem;
-  gap: 5.6rem; 
-  border: 2px solid var(--marker-color--);
-  border-radius: 1.2rem;
-}
-
-.preview{
+.previews-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.preview-link{
+.preview-list {
+  padding: 2rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1.2rem;
+  gap: 5.6rem;
+  border: 2px solid var(--marker-color--);
+  border-radius: 1.2rem;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-link {
   text-decoration: none;
   outline: none;
   display: flex;
@@ -37,7 +36,7 @@
 }
 
 .preview-link-active,
-.preview-link:hover{
+.preview-link:hover {
   transform: scale(1.1);
 }
 
@@ -45,22 +44,22 @@
   content: '';
   display: block;
   width: 100%;
-  height: 2.5px; 
+  height: 2.5px;
   background-image: var(--dark-linear--);
-  margin-top: 4px; 
+  margin-top: 4px;
 }
 
-.preview-img{
+.preview-img {
   width: 12.5rem;
   height: 15rem;
   background-image: var(--light-linear--);
   border-radius: 1.2rem;
 }
-.preview-name{
+.preview-name {
   color: var(--secondary-gray--txt);
 }
 
-.message{
+.message {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,21 +67,38 @@
   font-size: 2rem;
 }
 
-.recommendation-title{
+.recommendation-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: transparent; /* Make text color transparent */
   background-image: var(--dark-linear--); /* Define your gradient */
+  color: transparent; /* Make text color transparent */
   -webkit-background-clip: text; /* Clip background to text (for webkit browsers) */
   background-clip: text;
   font-size: 3.2rem;
-  margin-bottom: 2rem;
 }
-
-.reco-title-container{
+.arr-down {
+  font-size: 3.8rem;
+}
+.back-to-reco-arrow {
+  font-size: 3.2rem;
+}
+.reco-title-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.back-to-reco {
+  background-image: var(--dark-linear--);
+  color: transparent; /* Make text color transparent */
+  -webkit-background-clip: text; /* Clip background to text (for webkit browsers) */
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
 }

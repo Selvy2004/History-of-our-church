@@ -4,6 +4,7 @@ import mainResultView from "./views/mainResultView.js";
 import previewView from "./views/previewView.js";
 import paginationView from "./views/paginationView.js";
 import bookMarkView from "./views/bookMarkView.js";
+import resultsListView from "./views/resultsListView.js";
 
 const loadMainResult = function () {
   const id = window.location.hash.slice(1);
@@ -24,5 +25,6 @@ const init = function () {
   bookMarkView.bookmarkBtnEventHandler();
   bookMarkView.showBookmarksBtn();
   previewView.scrollToMainResults();
+  resultsListView.listResultsEvents();
 }
 init()

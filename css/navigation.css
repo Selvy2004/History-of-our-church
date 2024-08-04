@@ -1,5 +1,5 @@
 /* NAVIGATION */
-.navigation{
+.navigation {
   height: 10rem;
   position: relative;
   margin-top: 4rem;
@@ -12,22 +12,21 @@
   border-radius: 1.2rem 1.2rem 0 0;
 }
 
-.logo{
+.logo {
   margin-right: 2rem;
   font-size: 2.8rem;
 }
 
-.nav-list{
+.nav-list {
   margin-left: 2rem;
   display: flex;
   align-items: center;
   list-style: none;
   gap: 4rem;
   height: 100%;
-
 }
 
-.nav-btn-container{
+.nav-btn-container {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -35,7 +34,7 @@
   height: 100%;
 }
 
-.nav-btn{
+.nav-btn {
   /* background-color: #f2e7c3; */
   display: block;
   background-color: var(--nav-color--);
@@ -47,7 +46,7 @@
   box-sizing: inherit;
 }
 
-.bookmark-item-btn{
+.bookmark-item-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,14 +54,14 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transform: translate(-80%,-585%);
+  transform: translate(-80%, -585%);
 }
 
-.bookmark-word{
+.bookmark-word {
   font-size: 2rem;
   font-weight: 600;
-  color:var(--primary-gray--);
+  color: var(--primary-gray--);
 }
-.soon{
+.soon {
   font-size: 1.2rem;
 }

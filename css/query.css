@@ -161,7 +161,7 @@
     width: 30rem;
   }
   .bookmark-item-btn {
-    transform: translate(1.2rem, -43rem);
+    transform: translate(-1rem, -43rem);
   }
 }
 

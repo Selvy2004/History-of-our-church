@@ -5,6 +5,17 @@
   justify-content: center;
 }
 
+.bookmark-item-btn {
+  transform: translate(-80%, -585%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-purple--);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .bookmarks-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

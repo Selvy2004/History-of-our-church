@@ -46,17 +46,6 @@
   box-sizing: inherit;
 }
 
-.bookmark-item-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--very-light-purple--);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transform: translate(-80%, -585%);
-}
-
 .bookmark-word {
   font-size: 2rem;
   font-weight: 600;

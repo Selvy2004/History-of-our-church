@@ -1,5 +1,5 @@
 /* Main Result */
-.main-result-parent{
+.main-result-parent {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,18 +11,18 @@
   padding: 2.4rem;
   position: relative;
 }
-.bookmark-item-btn-withcontent{
+/* .bookmark-item-btn-withcontent {
   position: absolute;
   bottom: 55rem;
-}
+} */
 
-.main-result{
+.main-result {
   display: flex;
   flex-direction: column;
-  width: 116rem; 
+  width: 116rem;
 }
 
-.img-and-title{
+.img-and-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,18 +34,18 @@
   width: 22rem;
   border-radius: 1.2rem;
   background-image: var(--light-linear--);
-  box-shadow: 0 4rem 4rem .2rem rgba(97, 85, 81, .2);
+  box-shadow: 0 4rem 4rem 0.2rem rgba(97, 85, 81, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image-place{
+.image-place {
   height: 54rem;
   width: 54rem;
 }
 
-.image-subtopic{
+.image-subtopic {
   background-image: var(--light-linear--);
   width: 20rem;
   height: 12.5rem;
@@ -53,16 +53,16 @@
   margin-top: 2rem;
 }
 
-.result-title{
+.result-title {
   font-size: 3.2rem;
   display: inline-block;
   transform: translate(-2%, -60%) skewY(-8deg);
-  background-image: var(--light-linear-left--);  
+  background-image: var(--light-linear-left--);
   /* color: #ebe8ec; */
   color: var(--secondary-gray--);
 }
 
-.results-ul{
+.results-ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -72,36 +72,36 @@
   gap: 2.4rem;
 }
 
-.sub-title-result{
+.sub-title-result {
   font-size: 2.4rem;
 }
-.subject-result{
+.subject-result {
   font-size: 2rem;
 }
 
-.arrow-icon{
+.arrow-icon {
   width: 3.2rem;
   stroke: var(--marker-color--);
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.title-arrow-container{
+.title-arrow-container {
   display: flex;
   gap: 1.2rem;
 }
 
-.content{
+.content {
   width: auto;
   height: auto;
 }
 
-.coming-soon{
+.coming-soon {
   font-size: 6rem;
   color: var(--marker-color--);
   opacity: 0.5;
 }
 
-.message{
+.message {
   font-size: 3.2rem;
 }

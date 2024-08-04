@@ -112,7 +112,7 @@ class PreviewView extends View {
   backToRecoMarkup() {
     const markup = `
       <div class="back-to-reco">
-        <p>back to Recomendation</p> 
+        <p>back to Recommendation</p> 
         <span class="back-to-reco-arrow">&larr;</span>
       </div>
     `;

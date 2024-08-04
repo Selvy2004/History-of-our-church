@@ -199,6 +199,12 @@
   .image {
     margin-top: 1.2rem;
   }
+  .back-to-reco-arrow {
+    font-size: 2rem;
+  }
+  .result-title {
+    font-size: 2.4rem;
+  }
 }
 
 /* 405px */
@@ -224,10 +230,6 @@
   }
   .arrow-icon {
     width: 2.2rem;
-  }
-  .back-to-reco-arrow,
-  .result-title {
-    font-size: 2.4rem;
   }
 }
 

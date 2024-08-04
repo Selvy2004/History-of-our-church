@@ -45,9 +45,8 @@ class ResultsListView extends View {
         return;
       }
 
-      const collator = new Intl.Collator('ar');
-      const sortedDataArray = mainData.sort((a, b) => collator.compare(a.name, b.name));
 
+      const sortedDataArray = this._sort(mainData);
       if (sortedDataArray.length > 8) {
         sortedDataArray.splice(8);
       }

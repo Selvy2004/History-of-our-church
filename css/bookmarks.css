@@ -1,19 +1,19 @@
 /* BOOKMARKS */
-.bookmarks{
+.bookmarks {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bookmarks-list{
-  display:grid;
+.bookmarks-list {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
   align-items: center;
   justify-content: center;
 }
 
-.bookmark-item{
+.bookmark-item {
   display: flex;
   text-decoration: none;
   outline: none;
@@ -22,27 +22,27 @@
   justify-content: center;
   gap: 1.2rem;
   border: 1px solid var(--marker-color--);
-  padding:0.6rem;
+  padding: 0.6rem;
   border-radius: 1.2rem;
   cursor: pointer;
 }
 
-.bookmark-image{
+.bookmark-image {
   width: 10rem;
   height: 10rem;
   background-image: var(--light-linear--);
   border-radius: 1.2rem;
   transition: all 0.3s;
 }
-.parent-bookmark-item-img{
-  overflow:hidden;
+.parent-bookmark-item-img {
+  overflow: hidden;
 }
 .parent-bookmark-item-img:hover .bookmark-image {
-  transform: scale(1.2); 
+  transform: scale(1.2);
   /* NEED to edit */
 }
 
-.empty-bookmarks{
+.empty-bookmarks {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,22 +50,22 @@
   font-size: 2.4rem;
 }
 
-.bookmark-window{
+.bookmark-window {
   width: 70rem;
   min-height: 50rem;
   padding: 5rem 6rem;
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 1000;
   background-color: var(--white-color);
-  box-shadow: 5rem 2rem 6rem .5rem rgba(97, 85, 81, .2);
+  box-shadow: 5rem 2rem 6rem 0.5rem rgba(97, 85, 81, 0.2);
   border-radius: 1.2rem;
   transition: all 0.5s;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,10 +75,9 @@
   backdrop-filter: blur(4px);
   z-index: 300;
   transition: all 0.5s ease-in;
- 
 }
 
-.close-bookmarkwindow-btn{
+.close-bookmarkwindow-btn {
   border: none;
   outline: none;
   cursor: pointer;
@@ -88,7 +87,7 @@
   margin-bottom: 3.2rem;
 }
 
-.hidden-window{
+.hidden-window {
   visibility: hidden;
   opacity: 0;
 }

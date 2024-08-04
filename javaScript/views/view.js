@@ -23,4 +23,12 @@ export default class View {
   _clear() {
     this._parentElement.innerHTML = '';
   }
+  _sort(mainData) {
+    const collator = new Intl.Collator('ar', { sensitivity: 'base', ignorePunctuation: true });
+    const sortedDataArray = mainData.map(item => ({
+      ...item,
+      name: item.name.normalize("NFC")
+    })).sort((a, b) => collator.compare(a.name, b.name));
+    return sortedDataArray;
+  }
 }

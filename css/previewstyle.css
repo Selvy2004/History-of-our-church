@@ -91,6 +91,11 @@
   margin-bottom: 2rem;
 }
 
+.btn-reco-container {
+  transform: translateX(30%);
+  align-self: end;
+}
+
 .back-to-reco {
   background-image: var(--dark-linear--);
   color: transparent; /* Make text color transparent */
@@ -101,4 +106,5 @@
   justify-content: center;
   gap: 0.6rem;
   cursor: pointer;
+  font-size: 1.6rem;
 }

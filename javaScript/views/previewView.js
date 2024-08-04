@@ -55,7 +55,6 @@ class PreviewView extends View {
 
       // back to recommendation btn
       document.querySelector('.btn-reco-container').innerHTML = '';
-      this.backToRecoMarkup();
       document.querySelector('.reco-title-container').style.marginBottom = '0';
 
       if (window.innerWidth <= 1100) {
@@ -65,6 +64,7 @@ class PreviewView extends View {
       this.renderSpinner();
       // View it perfectly ^_^
       setTimeout(() => {
+        this.backToRecoMarkup();
         this.render(paginationView.getSearchResultsPage(mainData));
         paginationView.render(mainData);
       }, 400);

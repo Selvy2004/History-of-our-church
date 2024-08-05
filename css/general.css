@@ -164,7 +164,8 @@ html {
   outline: 2px solid var(--marker-color--);
 }
 
-::selection {
+::selection,
+::-webkit-selection {
   color: #fff;
   background-color: var(--marker-color--);
 }

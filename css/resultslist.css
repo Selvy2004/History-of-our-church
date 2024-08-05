@@ -36,6 +36,11 @@
 }
 
 .list-results-item-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
   text-decoration: none;
   color: var(--primary-gray--);
   outline: none;

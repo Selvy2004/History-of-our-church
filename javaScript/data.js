@@ -61,7 +61,7 @@ export const data = [
           <strong>قرار إقصاء البابا:</strong><br>
 
           + إبطال صالحية توقيع الأنبا شنودة.<br>
-          + عدم تواجده بالماهرة أو الإسكندرية.<br>
+          + عدم تواجده بالقاهرة أو الإسكندرية.<br>
           + عدم السماح له بلقاء الجماهير.<br>
 
           بمعنى أنه شال البابا، كان مفكر البابا أنه وزير أو حد احنا معينينه وهو يشيله وقت م يحب وعين بداله 5 أسالفة هم دول اللي يمشوا أمور المسيحيين، لكن البابا شنودة ده بالذات لا.<br>
@@ -130,7 +130,7 @@ export const data = [
     bookmarked: false,
   }, // ITEM:
   {
-    name: 'البابا أثناسيوس الرسولي',
+    name: 'البابا اثناسيوس الرسولي',
     id: 'athanasius',
     imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-2UppQMWMpF4UkepcUGi07PgKA668prN0g&s',
     topics: ['Coming Soon'],
@@ -152,7 +152,7 @@ export const data = [
     bookmarked: false,
   }, // ITEM:
   {
-    name: 'اكليمندس السكندرى ',
+    name: 'اكليمندس السكندرى',
     id: 'Clement-of-Alexandria',
     imageURL: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Clement_of_Ohrid%2C_an_icon_from_the_second_half_of_the_14th_century_%282%29.jpg',
     topics: ['Coming Soon'],
@@ -218,8 +218,8 @@ export const data = [
     bookmarked: false,
   }, // ITEM:
   {
-    name: 'القديس أغناطيوس الأنطاكي',
-    id: 'ignatiusofantioch',
+    name: 'القديس اغناطيوس الأنطاكي',
+    id: 'ignatius-of-antioch',
     imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7qCopbHaful8oo3FiTK1vOUvvBHJ1tO6hA&s',
     topics: ['Coming Soon'],
     resourses: [''],

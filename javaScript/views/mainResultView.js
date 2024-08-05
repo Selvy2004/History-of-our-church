@@ -8,7 +8,7 @@ class MainResultView extends View {
     return `
     <div class="main-result">
       <div class="img-and-title">
-        <img class="image" src="${this._data.imageURL}" alt="${this._data.name}"/>
+        <img class="image main-image" src="${this._data.imageURL}" alt="${this._data.name}"/>
         <h2 class="result-title">${this._data.name}</h2>
       </div>
       <div>

@@ -38,7 +38,7 @@ class PreviewView extends View {
       document.querySelector('.reco-title-container').style.marginBottom = '2rem';
 
       // NO input or white spaces
-      if (!searchField.value || searchField.value === ' ') return;
+      if (!searchField.value.trim()) return;
       mainData = allData.filter(obj => obj.name.includes(searchField.value) || obj.subtopic?.name.includes(searchField.value));
       searchField.value = '';
 

@@ -18,10 +18,12 @@ class ResultsListView extends View {
     const highlightedName = this.highlightMatch(item.name, searchField.value);
     return `
       <li class="list-results-item">
-        <a href="#${item.id}" class="list-results-item-link">${highlightedName}</a>
-        <svg class="search-icon results-search-icon">
-          <use href="img/icons.svg#icon-search"></use>
-        </svg>
+        <a href="#${item.id}" class="list-results-item-link">
+          <p>${highlightedName}</p>
+          <svg class="search-icon results-search-icon">
+            <use href="img/icons.svg#icon-search"></use>
+          </svg>
+        </a>
       </li>
     `
   }

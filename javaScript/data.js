@@ -106,7 +106,7 @@ export const data = [
     category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا شنودة الثالث
   {
     name: 'البابا إنيانوس الإسكافي',
     id: 'anianus',
@@ -117,7 +117,7 @@ export const data = [
     category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا إنيانوس الإسكافي
   {
     name: 'القديس مارمرقس الرسول',
     id: 'markos1',
@@ -128,9 +128,9 @@ export const data = [
     category: ['pope', 'martyr', 'messenger', 'character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: القديس مارمرقس الرسول
   {
-    name: 'البابا اثناسيوس الرسولي',
+    name: 'البابا أثناسيوس الرسولي',
     id: 'athanasius',
     imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-2UppQMWMpF4UkepcUGi07PgKA668prN0g&s',
     topics: ['Coming Soon'],
@@ -139,7 +139,7 @@ export const data = [
     category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا أثناسيوس الرسولى
   {
     name: 'البابا ديمتريوس الكرام',
     id: 'dimetrios1',
@@ -150,9 +150,9 @@ export const data = [
     category: ['pope', 'character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا ديمتريوس الكرام
   {
-    name: 'اكليمندس السكندرى',
+    name: 'إكليمندس السكندرى',
     id: 'Clement-of-Alexandria',
     imageURL: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Clement_of_Ohrid%2C_an_icon_from_the_second_half_of_the_14th_century_%282%29.jpg',
     topics: ['Coming Soon'],
@@ -161,9 +161,9 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: القديس إكليمندس السكندرى
   {
-    name: 'العلامة اوريجانوس',
+    name: 'العلامة أوريجانوس',
     id: 'origanos',
     imageURL: 'https://scontent.fcai20-5.fna.fbcdn.net/v/t1.18169-9/29512922_1646563292100759_7003308638491565145_n.jpg?stp=dst-jpg_s600x600&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=D7r0KERbSUsQ7kNvgE5ddBM&_nc_ht=scontent.fcai20-5.fna&oh=00_AYA-LEwF0D_JZL6qDAWP7GeoCAVHgDJaFnBkvk9uzrmkhQ&oe=66B30DD1',
     topics: ['Coming Soon'],
@@ -172,7 +172,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: العلامة أوريجانوس
   {
     name: ' البابا كيرلس عمود الدين',
     id: 'kerelos1',
@@ -183,7 +183,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا كيرلس عمود الدين
   {
     name: 'البابا ديسقورس',
     id: 'descoros1',
@@ -194,7 +194,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا ديسقورس
   {
     name: 'البابا كيرلس السادس',
     id: 'kereloc6',
@@ -205,7 +205,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: البابا كيرلس السادس
   {
     name: 'القديس يوحنا الحبيب',
     id: 'john1',
@@ -216,9 +216,9 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: القديس يوحنا الحبيب
   {
-    name: 'القديس اغناطيوس الأنطاكي',
+    name: 'القديس أغناطيوس الأنطاكي',
     id: 'ignatius-of-antioch',
     imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7qCopbHaful8oo3FiTK1vOUvvBHJ1tO6hA&s',
     topics: ['Coming Soon'],
@@ -227,7 +227,7 @@ export const data = [
     category: ['character'],
     reco: true,
     bookmarked: false,
-  }, // ITEM:
+  }, // ITEM: القديس أغناطيوس الأنطاكي
 ];
 
 
